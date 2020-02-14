@@ -5,25 +5,66 @@
 <title>Bio</title>
 <style>
         table, th, td {
-        padding: 10px;
-        border: 1px solid black; 
-        border-collapse: collapse;
+    padding: 10px;
+    border: 2px solid black; 
+    border-collapse: collapse;
         }
-      </style>
-</head>
-<h1>Morgan Bricker</h1>
-<body style="background-color: cadetblue;">
-        <img src="IMG_3500.jpeg" width="180" height="300" alt="Morgan pic">
+        .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 13%;
+        }
+        .myDivElement{
+    text-align:center;
+        }
+        .myDivElement ul li{
+    display:inline;
 
+        }
+        figcaption {
+    text-align: center;
+       }
+       .typewriter h1 {
+  font-family: monospace; /* Web-safe typewriter-like font */
+  font-size: xx-large;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 5.5s steps(30, end),
+    blinking-cursor .5s step-end infinite;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blinking-cursor {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+       @import url('https://fonts.googleapis.com/css?family=Galada|Lemonada|Noto+Sans|Open+Sans|Oswald|Poppins|Roboto+Mono&display=swap');
+        </style>
+</head>
+<div class="typewriter">
+<h1 align="center" >Morgan Bricker</h1>
+</div>
+<body style="background-color: cadetblue;">
+    <br>
+        <img src="IMG_3500.jpeg" class="center" alt="Morgan pic" >
+<br>
     <figcaption><em>Portrait of Morgan</em></figcaption>
 
 <hr>
-<p>
+<p align="center">
     I grew up in Indiana.  
 </p>
-<p>
+<p align="center">
     My major is in History and Psychology. I'm currently a student at Butler University in the Trilogy Data Analytics Program.
 </p>
+<div class="myDivElement">
 <ul>
    <li> <strong>Email:</strong>
     <a href="#">morgan.bricker@att.net</a>
@@ -36,8 +77,9 @@
     <strong>Instagram:</strong>
     <a href="#">https://www.instagram.com/bricker3k/?hl=en</a>
 </li>
-</ul>    
-<table>
+</ul>  
+</div>  
+<table align="center">
     <tr>
         <th>Books</th>
         <th>Movies</th>
@@ -53,6 +95,11 @@
             <td>Dirty Dancing</td>
             <td>Whitney Houston</td>
         </tr>
+        <tr>
+                <td>Catch-22</td>
+                <td>True Lies</td>
+                <td>Tom Petty and the Heartbreakers</td>
+            </tr>
 </table>
 <body>
 <html>
